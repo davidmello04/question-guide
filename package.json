@@ -1,0 +1,23 @@
+{
+  "name": "guiadeperguntas",
+  "version": "1.0.0",
+  "description": "Uma plataforma de perguntas e respostas ao estilo Yahoo respostas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmello04/GuiaDePerguntas.git"
+  },
+  "author": "David Melo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmello04/GuiaDePerguntas/issues"
+  },
+  "homepage": "https://github.com/davidmello04/GuiaDePerguntas#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
