@@ -10,6 +10,13 @@ app.get("/", (req, res) => {
     })
 });
 
+app.post("/salvarpergunta", (req, res) => {
+    var titulo = req.params.titulo
+    var descricao = req.params.descricao
+
+    //Inserir dados na tabela
+})
+
 app.listen(8180, () => {
     console.log("App rodando!");
 });
