@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/davidmello04/GuiaDePerguntas#readme",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.28.0"
   }
 }
