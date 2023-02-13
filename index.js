@@ -87,6 +87,6 @@ app.post("/responder", (req, res) => {
     });
 });
 
-app.listen(8180, () => {
+app.listen(80, () => {
     console.log("App rodando!");
 });
