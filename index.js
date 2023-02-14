@@ -44,12 +44,16 @@ app.post("/salvarpergunta", (req, res) => {
     var descricao = req.body.descricao;
 
     //Inserir dados na tabela
-    Pergunta.create({
-        titulo: titulo,
-        descricao: descricao,
-    }).then(() => {
-        res.redirect("/");
-    });
+    if(titulo !== "") {
+        Pergunta.create({
+            titulo: titulo,
+            descricao: descricao,
+        }).then(() => {
+            res.redirect("/");
+        });
+    } else {
+        res.redirect("/perguntar")
+    }
 });
 
 app.get("/pergunta/:id", (req, res) => {
@@ -79,14 +83,19 @@ app.get("/pergunta/:id", (req, res) => {
 app.post("/responder", (req, res) => {
     var corpo = req.body.corpo;
     var perguntaId = req.body.perguntaId;
-    Resposta.create({
-        corpo: corpo,
-        perguntaId: perguntaId,
-    }).then(() => {
-        res.redirect("/pergunta/" + perguntaId);
-    });
+    
+    if(corpo !== "") {
+        Resposta.create({
+            corpo: corpo,
+            perguntaId: perguntaId,
+        }).then(() => {
+            res.redirect("/pergunta/" + perguntaId);
+        });
+    } else {
+        res.redirect("/pergunta/" + perguntaId)
+    }
 });
 
-app.listen(80, () => {
+app.listen(8080, () => {
     console.log("App rodando!");
 });
