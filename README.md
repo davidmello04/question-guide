@@ -1,7 +1,7 @@
 # question-guide
 
 O Question Guide é uma aplicação web no estilo do Yahoo, onde os usuários podem fazer perguntas, receber respostas e interagir com outros usuários.
-a
+
 
 ## Screenshots
 
